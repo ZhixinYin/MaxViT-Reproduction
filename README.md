@@ -77,7 +77,7 @@ Compared with CoAtNet we trained earlier, the difference between Training accura
 ViT (12 encoder blocks) we trained earlier has 1.49s/batch, while our MaxViT (11 MaxViT blocks) has 0.50s/batch, which only requires 1/3 training time for a batch. The reason is that self-attention correlates every two patches, which requires lots of computation (O(N ^ 2)), while self-attention in MaxViT computes within a window (O(N)).
 
 ### Future work
-We can train MaxViT a larger scale of data, for example ImageNet-1K to reduce overfitting.
+We can train MaxViT on a larger scale of data, for example ImageNet-1K to reduce overfitting.
 
 ## References
 Tu, Z., Talebi, H., Zhang, H., Yang, F., Milanfar, P., Bovik, A., & Li, Y. (2022). MaxViT: Multi-axis vision transformer. In Computer Vision–ECCV 2022: 17th European Conference, Tel Aviv, Israel, October 23–27, 2022, Proceedings, Part XXIV (pp. 459–479). Springer Nature Switzerland. https://doi.org/10.1007/978-3-031-19815-1_27
